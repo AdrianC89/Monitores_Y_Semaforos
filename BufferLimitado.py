@@ -1,3 +1,8 @@
+"""Este código representa un búfer limitado en el que un productor coloca elementos en el búfer y un 
+consumidor los retira. Los semáforos empty y full controlan cuándo se pueden agregar elementos y 
+cuándo se pueden retirar elementos del búfer, y el semáforo mutex garantiza la exclusión 
+mutua al acceder al búfer compartido."""
+
 import threading
 import time
 
